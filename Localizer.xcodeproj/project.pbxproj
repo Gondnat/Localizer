@@ -10,7 +10,35 @@
 		11E9D4C91D220C72005298CC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1198B99A1D21DFEC00270C19 /* Cocoa.framework */; };
 		11E9D4CE1D220C72005298CC /* LocalizerSourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9D4CD1D220C72005298CC /* LocalizerSourceEditorExtension.swift */; };
 		11E9D4D01D220C72005298CC /* LocalizerSourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E9D4CF1D220C72005298CC /* LocalizerSourceEditorCommand.swift */; };
+		4C64BFDA208C8D7E008FFFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C64BFD9208C8D7E008FFFCB /* AppDelegate.swift */; };
+		4C64BFDC208C8D80008FFFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C64BFDB208C8D80008FFFCB /* Assets.xcassets */; };
+		4C64BFDF208C8D80008FFFCB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C64BFDD208C8D80008FFFCB /* MainMenu.xib */; };
+		4C64BFE7208C9042008FFFCB /* Localizer.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11E9D4C81D220C72005298CC /* Localizer.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C64BFE5208C902D008FFFCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1198B97A1D21DFC000270C19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E9D4C71D220C72005298CC;
+			remoteInfo = Localizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C64BFE8208C9042008FFFCB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4C64BFE7208C9042008FFFCB /* Localizer.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1198B99A1D21DFEC00270C19 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -19,6 +47,12 @@
 		11E9D4CD1D220C72005298CC /* LocalizerSourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizerSourceEditorExtension.swift; sourceTree = "<group>"; };
 		11E9D4CF1D220C72005298CC /* LocalizerSourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizerSourceEditorCommand.swift; sourceTree = "<group>"; };
 		11E9D4D11D220C72005298CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C64BFD7208C8D7E008FFFCB /* LocalizerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C64BFD9208C8D7E008FFFCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C64BFDB208C8D80008FFFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C64BFDE208C8D80008FFFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4C64BFE0208C8D80008FFFCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C64BFE1208C8D80008FFFCB /* LocalizerApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalizerApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C64BFD4208C8D7E008FFFCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				11E9D4CA1D220C72005298CC /* Localizer */,
+				4C64BFD8208C8D7E008FFFCB /* LocalizerApp */,
 				1198B9991D21DFEC00270C19 /* Frameworks */,
 				1198B9831D21DFC000270C19 /* Products */,
 			);
@@ -46,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				11E9D4C81D220C72005298CC /* Localizer.appex */,
+				4C64BFD7208C8D7E008FFFCB /* LocalizerApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +120,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4C64BFD8208C8D7E008FFFCB /* LocalizerApp */ = {
+			isa = PBXGroup;
+			children = (
+				4C64BFD9208C8D7E008FFFCB /* AppDelegate.swift */,
+				4C64BFDB208C8D80008FFFCB /* Assets.xcassets */,
+				4C64BFDD208C8D80008FFFCB /* MainMenu.xib */,
+				4C64BFE0208C8D80008FFFCB /* Info.plist */,
+				4C64BFE1208C8D80008FFFCB /* LocalizerApp.entitlements */,
+			);
+			path = LocalizerApp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,25 +152,49 @@
 			productReference = 11E9D4C81D220C72005298CC /* Localizer.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
+		4C64BFD6208C8D7E008FFFCB /* LocalizerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C64BFE4208C8D80008FFFCB /* Build configuration list for PBXNativeTarget "LocalizerApp" */;
+			buildPhases = (
+				4C64BFD3208C8D7E008FFFCB /* Sources */,
+				4C64BFD4208C8D7E008FFFCB /* Frameworks */,
+				4C64BFD5208C8D7E008FFFCB /* Resources */,
+				4C64BFE8208C9042008FFFCB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C64BFE6208C902D008FFFCB /* PBXTargetDependency */,
+			);
+			name = LocalizerApp;
+			productName = LocalizerApp;
+			productReference = 4C64BFD7208C8D7E008FFFCB /* LocalizerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1198B97A1D21DFC000270C19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Esteban Torres";
 				TargetAttributes = {
 					11E9D4C71D220C72005298CC = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = CG9RNV5Z5Q;
+						DevelopmentTeam = H3QAP7M2S2;
 						DevelopmentTeamName = "Esteban Torres Hernandez";
+						ProvisioningStyle = Manual;
+					};
+					4C64BFD6208C8D7E008FFFCB = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = H3QAP7M2S2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 1198B97D1D21DFC000270C19 /* Build configuration list for PBXProject "CocoaHeadsCR" */;
+			buildConfigurationList = 1198B97D1D21DFC000270C19 /* Build configuration list for PBXProject "Localizer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				11E9D4C71D220C72005298CC /* Localizer */,
+				4C64BFD6208C8D7E008FFFCB /* LocalizerApp */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +218,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C64BFD5208C8D7E008FFFCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C64BFDC208C8D80008FFFCB /* Assets.xcassets in Resources */,
+				4C64BFDF208C8D80008FFFCB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +242,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C64BFD3208C8D7E008FFFCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C64BFDA208C8D7E008FFFCB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C64BFE6208C902D008FFFCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11E9D4C71D220C72005298CC /* Localizer */;
+			targetProxy = 4C64BFE5208C902D008FFFCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C64BFDD208C8D80008FFFCB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C64BFDE208C8D80008FFFCB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1198B98F1D21DFC000270C19 /* Debug */ = {
@@ -246,12 +362,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Localizer/Localizer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H3QAP7M2S2;
 				INFOPLIST_FILE = Localizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = es.estebantorr.CocoaHeadsCR.Localizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thnuth.LocalizerApp.localizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 3.0;
 			};
@@ -261,21 +381,93 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Localizer/Localizer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H3QAP7M2S2;
 				INFOPLIST_FILE = Localizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks $(FRAMEWORK_SEARCH_PATHS)";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = es.estebantorr.CocoaHeadsCR.Localizer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thnuth.LocalizerApp.localizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4C64BFE2208C8D80008FFFCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = LocalizerApp/LocalizerApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H3QAP7M2S2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LocalizerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thnuth.LocalizerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4C64BFE3208C8D80008FFFCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = LocalizerApp/LocalizerApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H3QAP7M2S2;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = LocalizerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thnuth.LocalizerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1198B97D1D21DFC000270C19 /* Build configuration list for PBXProject "CocoaHeadsCR" */ = {
+		1198B97D1D21DFC000270C19 /* Build configuration list for PBXProject "Localizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1198B98F1D21DFC000270C19 /* Debug */,
@@ -289,6 +481,15 @@
 			buildConfigurations = (
 				11E9D4D61D220C72005298CC /* Debug */,
 				11E9D4D71D220C72005298CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C64BFE4208C8D80008FFFCB /* Build configuration list for PBXNativeTarget "LocalizerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C64BFE2208C8D80008FFFCB /* Debug */,
+				4C64BFE3208C8D80008FFFCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,8 +10,8 @@ import Foundation
 import XcodeKit
 
 class LocalizerSourceEditorCommand: NSObject, XCSourceEditorCommand {
-  
-  func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: (NSError?) -> Void ) -> Void {
+
+    func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void) {
     // Implement your command here, invoking the completion handler when done. Pass it nil on success, and an NSError on failure.
     guard let selection = invocation.buffer.selections.firstObject as? XCSourceTextRange else {
       completionHandler(NSError(domain: "es.estebantorr.CocoaHeadsCR.Localizer",
@@ -21,7 +21,7 @@ class LocalizerSourceEditorCommand: NSObject, XCSourceEditorCommand {
         ]))
       return
     }
-    
+
     // Iterate through all the selected lines
     for index in selection.start.line ... selection.end.line {
       // Convert to `NSString` to easily manipulate the selection
